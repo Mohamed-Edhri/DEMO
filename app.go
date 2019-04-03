@@ -7,11 +7,11 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "leeroooooy app!!\n")
+	fmt.Fprintf(w, "test app!!\n")
 }
 
 func main() {
-	log.Print("leeroy app server ready")
+	log.Print("test app server ready")
 	http.HandleFunc("/", handler)
 	http.ListenAndServe(":50051", nil)
 }
